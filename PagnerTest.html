@@ -4,16 +4,16 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Payment </title>
+<title>Pagner</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Payment ;
-		--web-view-id: Payment_;
+		--web-view-name: Pagner;
+		--web-view-id: Pagner;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Payment_;
+		--web-view-ids: Pagner;
 	}
 	* {
 		margin: 0;
@@ -21,16 +21,24 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#Payment_ {
+	#Pagner {
 		position: absolute;
 		width: 1920px;
 		height: 1080px;
 		background-color: rgba(242,249,255,1);
 		overflow: hidden;
-		--web-view-name: Payment ;
-		--web-view-id: Payment_;
+		--web-view-name: Pagner;
+		--web-view-id: Pagner;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
+	}
+	#Order {
+		position: absolute;
+		width: 1261px;
+		height: 806px;
+		left: 330px;
+		top: 106px;
+		overflow: visible;
 	}
 	#Container {
 		fill: rgba(255,255,255,1);
@@ -45,356 +53,370 @@
 		filter: drop-shadow(0px 33px 36px rgba(0, 39, 128, 0.122));
 		position: absolute;
 		overflow: visible;
-		width: 748px;
-		height: 915px;
-		left: 640px;
-		top: 137px;
-	}
-	#Payment_BG {
-		fill: rgba(21,129,237,1);
-		stroke: rgba(255,255,255,0.133);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Payment_BG {
-		position: absolute;
-		overflow: visible;
-		width: 599px;
-		height: 763px;
-		left: 660px;
-		top: 159px;
-	}
-	#Payment {
-		position: absolute;
-		width: 521px;
-		height: 672.324px;
-		left: 699px;
-		top: 206.676px;
-		overflow: visible;
-	}
-	#Card {
-		position: absolute;
-		width: 516px;
-		height: 97px;
-		left: 5px;
-		top: 342.325px;
-		overflow: visible;
-	}
-	#Rectangle_7 {
-		fill: rgba(61,147,234,1);
-		stroke: rgba(255,255,255,0.129);
-		stroke-width: 2px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_7 {
-		filter: drop-shadow(0px 20px 26px rgba(0, 47, 72, 0.306));
-		position: absolute;
-		overflow: visible;
-		width: 594px;
-		height: 144px;
+		width: 1369px;
+		height: 914px;
 		left: 0px;
-		top: 31px;
+		top: 0px;
 	}
-	#Rectangle_132 {
-		opacity: 0.4;
-		fill: rgba(113,184,255,1);
+	#Cart {
+		position: absolute;
+		width: 1216px;
+		height: 762px;
+		left: 22px;
+		top: 22px;
+		overflow: visible;
 	}
-	.Rectangle_132 {
-		filter: drop-shadow(5px 0px 6px rgba(0, 39, 128, 0.122));
+	#Cart_BG {
+		fill: rgba(244,246,248,1);
+	}
+	.Cart_BG {
 		position: absolute;
 		overflow: visible;
-		width: 92px;
-		height: 68px;
-		left: 434px;
-		top: 39px;
+		width: 1216px;
+		height: 762px;
+		left: 0px;
+		top: 0px;
 	}
-	#Rectangle_133 {
-		opacity: 0.6;
-		fill: rgba(113,184,255,1);
+	#Cart_o {
+		position: absolute;
+		width: 1128.893px;
+		height: 671.352px;
+		left: 44px;
+		top: 51.648px;
+		overflow: visible;
 	}
-	.Rectangle_133 {
-		filter: drop-shadow(5px 0px 6px rgba(0, 39, 128, 0.122));
+	#Order_summary {
+		left: 41px;
+		top: 3.352px;
+		position: absolute;
+		overflow: visible;
+		width: 140px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -6.5px;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(63,76,88,1);
+	}
+	#Remove_all {
+		left: 1038px;
+		top: 2.352px;
 		position: absolute;
 		overflow: visible;
 		width: 91px;
-		height: 68px;
-		left: 418px;
-		top: 39px;
-	}
-	#Rectangle_134 {
-		fill: rgba(113,184,255,1);
-	}
-	.Rectangle_134 {
-		filter: drop-shadow(5px 0px 6px rgba(0, 39, 128, 0.122));
-		position: absolute;
-		overflow: visible;
-		width: 92px;
-		height: 68px;
-		left: 398px;
-		top: 39px;
-	}
-	#n_234___3924___2394___3294 {
-		left: 24px;
-		top: 54px;
-		position: absolute;
-		overflow: visible;
-		width: 275px;
-		white-space: nowrap;
-		line-height: 33px;
-		margin-top: -4.5px;
-		text-align: left;
-		font-family: Sofia Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 24px;
-		color: rgba(255,255,255,1);
-	}
-	#Credit_card_number {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 172px;
-		white-space: nowrap;
-		line-height: 33px;
-		margin-top: -6.5px;
-		text-align: left;
-		font-family: Sofia Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(255,255,255,1);
-	}
-	#Name {
-		position: absolute;
-		width: 516px;
-		height: 97px;
-		left: 5px;
-		top: 210.324px;
-		overflow: visible;
-	}
-	#Rectangle_7_w {
-		fill: rgba(0,0,0,0.161);
-		stroke: rgba(24,129,237,1);
-		stroke-width: 3px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_7_w {
-		position: absolute;
-		overflow: visible;
-		width: 516px;
-		height: 66px;
-		left: 0px;
-		top: 31px;
-	}
-	#Howard_Pinsky {
-		left: 24px;
-		top: 54px;
-		position: absolute;
-		overflow: visible;
-		width: 161px;
-		white-space: nowrap;
-		line-height: 33px;
-		margin-top: -4.5px;
-		text-align: left;
-		font-family: Sofia Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 24px;
-		color: rgba(255,255,255,1);
-	}
-	#Name_of_card_holder {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 182px;
-		white-space: nowrap;
-		line-height: 33px;
-		margin-top: -6.5px;
-		text-align: left;
-		font-family: Sofia Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(255,255,255,1);
-	}
-	#Exp {
-		position: absolute;
-		width: 248px;
-		height: 97px;
-		left: 5px;
-		top: 473.324px;
-		overflow: visible;
-	}
-	#Rectangle_7_ {
-		fill: rgba(0,0,0,0.161);
-	}
-	.Rectangle_7_ {
-		position: absolute;
-		overflow: visible;
-		width: 248px;
-		height: 66px;
-		left: 0px;
-		top: 31px;
-	}
-	#n_225 {
-		left: 24px;
-		top: 54px;
-		position: absolute;
-		overflow: visible;
-		width: 61px;
-		white-space: nowrap;
-		line-height: 33px;
-		margin-top: -4.5px;
-		text-align: left;
-		font-family: Sofia Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 24px;
-		color: rgba(255,255,255,1);
-	}
-	#Expiration {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 90px;
-		white-space: nowrap;
-		line-height: 33px;
-		margin-top: -6.5px;
-		text-align: left;
-		font-family: Sofia Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(255,255,255,1);
-	}
-	#Current {
-		position: absolute;
-		width: 246px;
-		height: 176px;
-		left: 0px;
-		top: 0.324px;
-		overflow: visible;
-	}
-	#Card_ {
-		fill: rgba(61,147,234,1);
-		stroke: rgba(255,255,255,0.129);
-		stroke-width: 2px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Card_ {
-		filter: drop-shadow(0px 20px 26px rgba(0, 47, 72, 0.306));
-		position: absolute;
-		overflow: visible;
-		width: 324px;
-		height: 223px;
-		left: 0px;
-		top: 31px;
-	}
-	#Current_credit_card {
-		left: 5px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 167px;
-		white-space: nowrap;
-		line-height: 33px;
-		margin-top: -6.5px;
-		text-align: left;
-		font-family: Sofia Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(255,255,255,1);
-	}
-	#n_________3294 {
-		left: 20.012px;
-		top: 110.713px;
-		position: absolute;
-		overflow: visible;
-		width: 162px;
 		white-space: nowrap;
 		line-height: 33px;
 		margin-top: -7.5px;
+		text-align: right;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(137,152,168,1);
+	}
+	#cart-shopping-fast {
+		position: absolute;
+		width: 28.381px;
+		height: 22.705px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Groupe_14 {
+		position: absolute;
+		width: 28.381px;
+		height: 22.705px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Trac_4 {
+		opacity: 0.4;
+		fill: rgba(63,76,88,1);
+	}
+	.Trac_4 {
+		overflow: visible;
+		position: absolute;
+		width: 28.381px;
+		height: 12.062px;
+		left: 0px;
+		top: 1.419px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_5 {
+		fill: rgba(63,76,88,1);
+	}
+	.Trac_5 {
+		overflow: visible;
+		position: absolute;
+		width: 22.705px;
+		height: 22.705px;
+		left: 2.838px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Items {
+		position: absolute;
+		width: 1123.749px;
+		height: 410px;
+		left: 0px;
+		top: 55.352px;
+		overflow: visible;
+	}
+	#Item {
+		position: absolute;
+		width: 1123.749px;
+		height: 83px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Item_x {
+		fill: rgba(222,222,222,1);
+	}
+	.Item_x {
+		position: absolute;
+		overflow: visible;
+		width: 83px;
+		height: 83px;
+		left: 0px;
+		top: 0px;
+	}
+	#Item_name_here {
+		left: 99px;
+		top: 22px;
+		position: absolute;
+		overflow: visible;
+		width: 141px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -6.5px;
 		text-align: left;
 		font-family: Sofia Pro;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 18px;
-		color: rgba(188,221,255,1);
+		font-size: 20px;
+		color: rgba(63,76,88,1);
 	}
-	#Howard_Pinsky_ {
-		left: 20.012px;
-		top: 140.713px;
+	#Sub_information {
+		opacity: 0.5;
+		left: 99px;
+		top: 47px;
 		position: absolute;
 		overflow: visible;
-		width: 108px;
+		width: 113px;
 		white-space: nowrap;
 		line-height: 33px;
 		margin-top: -8.5px;
 		text-align: left;
 		font-family: Sofia Pro;
 		font-style: normal;
-		font-weight: bold;
+		font-weight: normal;
 		font-size: 16px;
-		color: rgba(188,221,255,1);
+		color: rgba(63,76,88,1);
 	}
-	#cc-visa {
+	#n_932 {
+		left: 1026px;
+		top: 31px;
 		position: absolute;
-		width: 25.988px;
-		height: 20.213px;
-		left: 20.012px;
-		top: 50.75px;
+		overflow: visible;
+		width: 68px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -5.5px;
+		text-align: right;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(63,76,88,1);
+	}
+	#Quantity {
+		position: absolute;
+		width: 88px;
+		height: 30px;
+		left: 924px;
+		top: 27px;
 		overflow: visible;
 	}
-	#Groupe_17 {
+	#n_ {
+		left: 39px;
+		top: 6px;
 		position: absolute;
-		width: 25.988px;
-		height: 20.213px;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -7.5px;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(63,76,88,1);
+	}
+	#Minus {
+		position: absolute;
+		width: 30px;
+		height: 30px;
 		left: 0px;
 		top: 0px;
 		overflow: visible;
 	}
-	#Trac_8 {
-		fill: rgba(247,247,247,1);
+	#Ellipse_5 {
+		fill: rgba(223,232,242,1);
 	}
-	.Trac_8 {
+	.Ellipse_5 {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ligne_5 {
+		fill: transparent;
+		stroke: rgba(161,176,193,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ligne_5 {
 		overflow: visible;
 		position: absolute;
-		width: 25.988px;
-		height: 20.213px;
+		width: 10px;
+		height: 2px;
+		left: 11px;
+		top: 15px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Plus {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 58px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Ellipse_5_ {
+		fill: rgba(223,232,242,1);
+	}
+	.Ellipse_5_ {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ligne_5_ {
+		fill: transparent;
+		stroke: rgba(161,176,193,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ligne_5_ {
+		overflow: visible;
+		position: absolute;
+		width: 10px;
+		height: 2px;
+		left: 11px;
+		top: 15px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ligne_6 {
+		fill: transparent;
+		stroke: rgba(161,176,193,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ligne_6 {
+		overflow: visible;
+		position: absolute;
+		width: 8px;
+		height: 1px;
+		transform: translate(0px, 0px) matrix(1,0,0,1,11.3389,15) rotate(90deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+	#trash-can {
+		position: absolute;
+		width: 12.606px;
+		height: 14.407px;
+		left: 1111.143px;
+		top: 34.592px;
+		overflow: visible;
+	}
+	#Groupe_15 {
+		position: absolute;
+		width: 12.606px;
+		height: 14.407px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Trac_6 {
+		opacity: 0.4;
+		fill: rgba(63,76,88,1);
+	}
+	.Trac_6 {
+		overflow: visible;
+		position: absolute;
+		width: 10.805px;
+		height: 11.706px;
+		left: 0.9px;
+		top: 2.701px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_7 {
+		fill: rgba(63,76,88,1);
+	}
+	.Trac_7 {
+		overflow: visible;
+		position: absolute;
+		width: 12.606px;
+		height: 2.701px;
 		left: 0px;
 		top: 0px;
 		transform: matrix(1,0,0,1,0,0);
 	}
-	#New {
+	#Item_be {
 		position: absolute;
-		width: 246.309px;
-		height: 176.091px;
-		left: 272.114px;
-		top: 0.13px;
+		width: 1123.749px;
+		height: 83px;
+		left: 0px;
+		top: 109px;
 		overflow: visible;
 	}
-	#Add_new_credit_card {
-		left: 7.669px;
-		top: 0px;
+	#Item_bf {
+		fill: rgba(222,222,222,1);
+	}
+	.Item_bf {
 		position: absolute;
 		overflow: visible;
-		width: 178px;
+		width: 83px;
+		height: 83px;
+		left: 0px;
+		top: 0px;
+	}
+	#Item_name_here_bg {
+		left: 99px;
+		top: 22px;
+		position: absolute;
+		overflow: visible;
+		width: 141px;
 		white-space: nowrap;
 		line-height: 33px;
 		margin-top: -6.5px;
@@ -403,311 +425,873 @@
 		font-style: normal;
 		font-weight: bold;
 		font-size: 20px;
-		color: rgba(255,255,255,1);
+		color: rgba(63,76,88,1);
 	}
-	#Card_bd {
+	#Sub_information_bh {
+		opacity: 0.5;
+		left: 99px;
+		top: 47px;
 		position: absolute;
-		width: 246.309px;
-		height: 145.182px;
-		left: 0px;
-		top: 30.967px;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -8.5px;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(63,76,88,1);
+	}
+	#n_018 {
+		left: 1026px;
+		top: 31px;
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -5.5px;
+		text-align: right;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(63,76,88,1);
+	}
+	#Quantity_bj {
+		position: absolute;
+		width: 88px;
+		height: 30px;
+		left: 924px;
+		top: 27px;
 		overflow: visible;
 	}
-	#Placeholder {
+	#n__bk {
+		left: 39px;
+		top: 6px;
 		position: absolute;
-		width: 246px;
-		height: 145px;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -7.5px;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(63,76,88,1);
+	}
+	#Minus_bl {
+		position: absolute;
+		width: 30px;
+		height: 30px;
 		left: 0px;
 		top: 0px;
 		overflow: visible;
 	}
-	#Card_bg {
-		fill: url(#Card_bg);
-		stroke: rgba(58,151,244,1);
-		stroke-width: 1px;
-		stroke-linejoin: round;
-		stroke-linecap: round;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
+	#Ellipse_5_bm {
+		fill: rgba(223,232,242,1);
 	}
-	.Card_bg {
+	.Ellipse_5_bm {
 		position: absolute;
 		overflow: visible;
-		width: 247.774px;
-		height: 146.458px;
+		width: 30px;
+		height: 30px;
 		left: 0px;
 		top: 0px;
 	}
-	#Add {
-		position: absolute;
-		width: 41px;
-		height: 41px;
-		left: 102.821px;
-		top: 52.163px;
-		overflow: visible;
-	}
-	#Ellipse_4 {
-		fill: rgba(255,255,255,0.122);
-	}
-	.Ellipse_4 {
-		position: absolute;
-		overflow: visible;
-		width: 41.129px;
-		height: 41.129px;
-		left: 0px;
-		top: 0px;
-	}
-	#Ligne_3 {
+	#Ligne_5_bn {
 		fill: transparent;
-		stroke: rgba(255,255,255,1);
-		stroke-width: 3px;
+		stroke: rgba(161,176,193,1);
+		stroke-width: 2px;
 		stroke-linejoin: miter;
 		stroke-linecap: round;
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
-	.Ligne_3 {
+	.Ligne_5_bn {
 		overflow: visible;
 		position: absolute;
-		width: 3.01px;
-		height: 12.038px;
-		left: 20.564px;
-		top: 16.05px;
+		width: 10px;
+		height: 2px;
+		left: 11px;
+		top: 15px;
 		transform: matrix(1,0,0,1,0,0);
 	}
-	#Ligne_4 {
+	#Plus_bo {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 58px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Ellipse_5_bp {
+		fill: rgba(223,232,242,1);
+	}
+	.Ellipse_5_bp {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ligne_5_bq {
 		fill: transparent;
-		stroke: rgba(255,255,255,1);
-		stroke-width: 3px;
+		stroke: rgba(161,176,193,1);
+		stroke-width: 2px;
 		stroke-linejoin: miter;
 		stroke-linecap: round;
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
-	.Ligne_4 {
+	.Ligne_5_bq {
 		overflow: visible;
 		position: absolute;
-		width: 1px;
-		height: 9px;
-		transform: translate(-99.936px, -85.739px) matrix(1,0,0,1,120.5,101.803) rotate(90deg);
+		width: 10px;
+		height: 2px;
+		left: 11px;
+		top: 15px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ligne_6_br {
+		fill: transparent;
+		stroke: rgba(161,176,193,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ligne_6_br {
+		overflow: visible;
+		position: absolute;
+		width: 8px;
+		height: 1px;
+		transform: translate(0px, 0px) matrix(1,0,0,1,11.3389,15) rotate(90deg);
 		transform-origin: center;
 		left: 0px;
 		top: 0px;
 	}
-	#Enter_New {
-		transform: translate(2.886px, -33.576px) [object Object] rotate(180deg);
+	#trash-can_bs {
+		position: absolute;
+		width: 12.606px;
+		height: 14.407px;
+		left: 1111.143px;
+		top: 34.592px;
+		overflow: visible;
+	}
+	#Groupe_15_bt {
+		position: absolute;
+		width: 12.606px;
+		height: 14.407px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Trac_6_bu {
+		opacity: 0.4;
+		fill: rgba(63,76,88,1);
+	}
+	.Trac_6_bu {
+		overflow: visible;
+		position: absolute;
+		width: 10.805px;
+		height: 11.706px;
+		left: 0.9px;
+		top: 2.701px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_7_bv {
+		fill: rgba(63,76,88,1);
+	}
+	.Trac_7_bv {
+		overflow: visible;
+		position: absolute;
+		width: 12.606px;
+		height: 2.701px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Item_bw {
+		position: absolute;
+		width: 1123.749px;
+		height: 83px;
+		left: 0px;
+		top: 218px;
+		overflow: visible;
+	}
+	#Item_bx {
+		fill: rgba(222,222,222,1);
+	}
+	.Item_bx {
+		position: absolute;
+		overflow: visible;
+		width: 83px;
+		height: 83px;
+		left: 0px;
+		top: 0px;
+	}
+	#Item_name_here_by {
+		left: 99px;
+		top: 22px;
+		position: absolute;
+		overflow: visible;
+		width: 141px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -6.5px;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(63,76,88,1);
+	}
+	#Sub_information_bz {
+		opacity: 0.5;
+		left: 99px;
+		top: 47px;
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -8.5px;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(63,76,88,1);
+	}
+	#n_911 {
+		left: 1027px;
+		top: 31px;
+		position: absolute;
+		overflow: visible;
+		width: 67px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -5.5px;
+		text-align: right;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(63,76,88,1);
+	}
+	#Quantity_b {
+		position: absolute;
+		width: 88px;
+		height: 30px;
+		left: 924px;
+		top: 27px;
+		overflow: visible;
+	}
+	#n__b {
+		left: 39px;
+		top: 6px;
+		position: absolute;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -7.5px;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(63,76,88,1);
+	}
+	#Minus_b {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Ellipse_5_b {
+		fill: rgba(223,232,242,1);
+	}
+	.Ellipse_5_b {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ligne_5_b {
+		fill: transparent;
+		stroke: rgba(161,176,193,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ligne_5_b {
+		overflow: visible;
+		position: absolute;
+		width: 10px;
+		height: 2px;
+		left: 11px;
+		top: 15px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Plus_b {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 58px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Ellipse_5_ca {
+		fill: rgba(223,232,242,1);
+	}
+	.Ellipse_5_ca {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ligne_5_ca {
+		fill: transparent;
+		stroke: rgba(161,176,193,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ligne_5_ca {
+		overflow: visible;
+		position: absolute;
+		width: 10px;
+		height: 2px;
+		left: 11px;
+		top: 15px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ligne_6_b {
+		fill: transparent;
+		stroke: rgba(161,176,193,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ligne_6_b {
+		overflow: visible;
+		position: absolute;
+		width: 8px;
+		height: 1px;
+		transform: translate(0px, 0px) matrix(1,0,0,1,11.3389,15) rotate(90deg);
 		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+	#trash-can_ca {
 		position: absolute;
-		width: 246px;
-		height: 145px;
+		width: 12.606px;
+		height: 14.407px;
+		left: 1111.143px;
+		top: 34.592px;
+		overflow: visible;
+	}
+	#Groupe_15_cb {
+		position: absolute;
+		width: 12.606px;
+		height: 14.407px;
 		left: 0px;
 		top: 0px;
 		overflow: visible;
 	}
-	#Shadow {
-		opacity: 0;
-		filter: blur(14.944px);
-		fill: rgba(0,69,139,1);
+	#Trac_6_cc {
+		opacity: 0.4;
+		fill: rgba(63,76,88,1);
 	}
-	.Shadow {
+	.Trac_6_cc {
+		overflow: visible;
+		position: absolute;
+		width: 10.805px;
+		height: 11.706px;
+		left: 0.9px;
+		top: 2.701px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_7_cd {
+		fill: rgba(63,76,88,1);
+	}
+	.Trac_7_cd {
+		overflow: visible;
+		position: absolute;
+		width: 12.606px;
+		height: 2.701px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Item_ce {
+		position: absolute;
+		width: 1123.749px;
+		height: 83px;
+		left: 0px;
+		top: 327px;
+		overflow: visible;
+	}
+	#Item_cf {
+		fill: rgba(222,222,222,1);
+	}
+	.Item_cf {
 		position: absolute;
 		overflow: visible;
-		width: 335.818px;
-		height: 234.755px;
+		width: 83px;
+		height: 83px;
 		left: 0px;
 		top: 0px;
 	}
-	#Card_bn {
-		fill: rgba(61,147,234,1);
-	}
-	.Card_bn {
+	#Item_name_here_cg {
+		left: 99px;
+		top: 22px;
 		position: absolute;
 		overflow: visible;
-		width: 246.154px;
-		height: 145.091px;
+		width: 141px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -6.5px;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(63,76,88,1);
+	}
+	#Sub_information_ch {
+		opacity: 0.5;
+		left: 99px;
+		top: 47px;
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -8.5px;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(63,76,88,1);
+	}
+	#n_560 {
+		left: 1026px;
+		top: 31px;
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -5.5px;
+		text-align: right;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(63,76,88,1);
+	}
+	#Quantity_cj {
+		position: absolute;
+		width: 88px;
+		height: 30px;
+		left: 924px;
+		top: 27px;
+		overflow: visible;
+	}
+	#n__ck {
+		left: 39px;
+		top: 6px;
+		position: absolute;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -7.5px;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(63,76,88,1);
+	}
+	#Minus_cl {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Ellipse_5_cm {
+		fill: rgba(223,232,242,1);
+	}
+	.Ellipse_5_cm {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
 		left: 0px;
 		top: 0px;
 	}
-	#Info {
-		position: absolute;
-		width: 197px;
-		height: 90px;
-		left: 24.515px;
-		top: 28.018px;
-		overflow: visible;
-	}
-	#Rectangle_1545 {
+	#Ligne_5_cn {
 		fill: transparent;
-		stroke: rgba(255,255,255,1);
+		stroke: rgba(161,176,193,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ligne_5_cn {
+		overflow: visible;
+		position: absolute;
+		width: 10px;
+		height: 2px;
+		left: 11px;
+		top: 15px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Plus_co {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 58px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Ellipse_5_cp {
+		fill: rgba(223,232,242,1);
+	}
+	.Ellipse_5_cp {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ligne_5_cq {
+		fill: transparent;
+		stroke: rgba(161,176,193,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ligne_5_cq {
+		overflow: visible;
+		position: absolute;
+		width: 10px;
+		height: 2px;
+		left: 11px;
+		top: 15px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ligne_6_cr {
+		fill: transparent;
+		stroke: rgba(161,176,193,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ligne_6_cr {
+		overflow: visible;
+		position: absolute;
+		width: 8px;
+		height: 1px;
+		transform: translate(0px, 0px) matrix(1,0,0,1,11.3389,15) rotate(90deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+	#trash-can_cs {
+		position: absolute;
+		width: 12.606px;
+		height: 14.407px;
+		left: 1111.143px;
+		top: 34.592px;
+		overflow: visible;
+	}
+	#Groupe_15_ct {
+		position: absolute;
+		width: 12.606px;
+		height: 14.407px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Trac_6_cu {
+		opacity: 0.4;
+		fill: rgba(63,76,88,1);
+	}
+	.Trac_6_cu {
+		overflow: visible;
+		position: absolute;
+		width: 10.805px;
+		height: 11.706px;
+		left: 0.9px;
+		top: 2.701px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_7_cv {
+		fill: rgba(63,76,88,1);
+	}
+	.Trac_7_cv {
+		overflow: visible;
+		position: absolute;
+		width: 12.606px;
+		height: 2.701px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Totals {
+		position: absolute;
+		width: 1128px;
+		height: 154px;
+		left: 0px;
+		top: 517.352px;
+		overflow: visible;
+	}
+	#n_3421 {
+		left: 1048px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 81px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -5.5px;
+		text-align: right;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 22px;
+		color: rgba(63,76,88,1);
+	}
+	#n_23 {
+		left: 1073px;
+		top: 44px;
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -5.5px;
+		text-align: right;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 22px;
+		color: rgba(63,76,88,1);
+	}
+	#n_51 {
+		left: 1073px;
+		top: 88px;
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -5.5px;
+		text-align: right;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 22px;
+		color: rgba(63,76,88,1);
+	}
+	#n_4295 {
+		left: 1048px;
+		top: 132px;
+		position: absolute;
+		overflow: visible;
+		width: 81px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -5.5px;
+		text-align: right;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(63,76,88,1);
+	}
+	#Subtotal {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 82px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -5.5px;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(63,76,88,1);
+	}
+	#Shipping_fees {
+		left: 0px;
+		top: 44px;
+		position: absolute;
+		overflow: visible;
+		width: 134px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -5.5px;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(63,76,88,1);
+	}
+	#Taxes {
+		left: 0px;
+		top: 88px;
+		position: absolute;
+		overflow: visible;
+		width: 58px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -5.5px;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(63,76,88,1);
+	}
+	#Total_including_tax {
+		left: 0px;
+		top: 132px;
+		position: absolute;
+		overflow: visible;
+		width: 208px;
+		white-space: nowrap;
+		line-height: 33px;
+		margin-top: -5.5px;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(63,76,88,1);
+	}
+	#Separator {
+		opacity: 0.3;
+		fill: transparent;
+		stroke: rgba(168,185,204,1);
 		stroke-width: 1px;
 		stroke-linejoin: miter;
 		stroke-linecap: butt;
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
-	.Rectangle_1545 {
-		position: absolute;
+	.Separator {
 		overflow: visible;
-		width: 197.123px;
-		height: 27.017px;
-		left: 0px;
-		top: 15.009px;
-	}
-	#Rectangle_1546 {
-		fill: transparent;
-		stroke: rgba(255,255,255,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_1546 {
 		position: absolute;
-		overflow: visible;
-		width: 91.057px;
-		height: 23.014px;
-		left: 106.066px;
-		top: 67.042px;
+		width: 1128.393px;
+		height: 1px;
+		left: 0.5px;
+		top: 491.121px;
+		transform: matrix(1,0,0,1,0,0);
 	}
-	#Rectangle_1548 {
-		fill: transparent;
-		stroke: rgba(255,255,255,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_1548 {
+	#Button_payment {
 		position: absolute;
-		overflow: visible;
-		width: 101.063px;
-		height: 23.014px;
-		left: 0px;
-		top: 67.042px;
-	}
-	#n_________3294_bs {
-		left: 82.051px;
-		top: 21.013px;
-		position: absolute;
-		overflow: visible;
-		width: 106px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -5px;
-		text-align: left;
-		font-family: Basic Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 12px;
-		color: rgba(255,255,255,1);
-	}
-	#n_22023 {
-		left: 142.089px;
-		top: 71.044px;
-		position: absolute;
-		overflow: visible;
-		width: 46px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -5px;
-		text-align: left;
-		font-family: Basic Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 12px;
-		color: rgba(255,255,255,1);
-	}
-	#n_34 {
-		left: 70.044px;
-		top: 71.044px;
-		position: absolute;
-		overflow: visible;
-		width: 22px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -5px;
-		text-align: left;
-		font-family: Basic Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 12px;
-		color: rgba(255,255,255,1);
-	}
-	#Credit_card_number_bv {
-		left: 94.059px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 104px;
-		white-space: nowrap;
-		line-height: 33px;
-		margin-top: -10.5px;
-		text-align: left;
-		font-family: Sofia Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 12px;
-		color: rgba(255,255,255,1);
-	}
-	#Expiration_bw {
-		left: 144.09px;
-		top: 52.032px;
-		position: absolute;
-		overflow: visible;
-		width: 54px;
-		white-space: nowrap;
-		line-height: 33px;
-		margin-top: -10.5px;
-		text-align: left;
-		font-family: Sofia Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 12px;
-		color: rgba(255,255,255,1);
-	}
-	#CVV {
-		left: 77.048px;
-		top: 52.032px;
-		position: absolute;
-		overflow: visible;
-		width: 26px;
-		white-space: nowrap;
-		line-height: 33px;
-		margin-top: -10.5px;
-		text-align: left;
-		font-family: Sofia Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 12px;
-		color: rgba(255,255,255,1);
-	}
-	#Button {
-		position: absolute;
-		width: 248px;
+		width: 340px;
 		height: 56px;
-		left: 5px;
-		top: 616.324px;
+		left: 485px;
+		top: 933px;
 		overflow: visible;
 	}
 	#Rectangle_124 {
-		fill: rgba(255,255,255,1);
+		fill: rgba(21,129,237,1);
 	}
 	.Rectangle_124 {
 		position: absolute;
 		overflow: visible;
-		width: 248px;
+		width: 340px;
 		height: 56px;
 		left: 0px;
 		top: 0px;
 	}
-	#Make_Payment {
-		left: 48px;
+	#Payment {
+		left: 124px;
 		top: 18px;
 		position: absolute;
 		overflow: visible;
-		width: 153px;
+		width: 93px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(255,255,255,1);
+		text-transform: capitalize;
+	}
+	#Button_retour {
+		position: absolute;
+		width: 340px;
+		height: 56px;
+		left: 1095px;
+		top: 933px;
+		overflow: visible;
+	}
+	#Rectangle_124_da {
+		fill: transparent;
+		stroke: rgba(21,129,237,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_124_da {
+		position: absolute;
+		overflow: visible;
+		width: 340px;
+		height: 56px;
+		left: 0px;
+		top: 0px;
+	}
+	#Retour {
+		left: 135px;
+		top: 18px;
+		position: absolute;
+		overflow: visible;
+		width: 71px;
 		white-space: nowrap;
 		line-height: 28px;
 		margin-top: -3px;
@@ -717,177 +1301,7 @@
 		font-weight: bold;
 		font-size: 22px;
 		color: rgba(21,129,237,1);
-	}
-	#Button_b {
-		position: absolute;
-		width: 248px;
-		height: 56px;
-		left: 273px;
-		top: 616.324px;
-		overflow: visible;
-	}
-	#Rectangle_124_b {
-		fill: transparent;
-		stroke: rgba(255,255,255,1);
-		stroke-width: 3px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_124_b {
-		position: absolute;
-		overflow: visible;
-		width: 248px;
-		height: 56px;
-		left: 0px;
-		top: 0px;
-	}
-	#Cancel {
-		left: 90px;
-		top: 18px;
-		position: absolute;
-		overflow: visible;
-		width: 69px;
-		white-space: nowrap;
-		line-height: 28px;
-		margin-top: -3px;
-		text-align: center;
-		font-family: Sofia Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 22px;
-		color: rgba(255,255,255,1);
-	}
-	#CVV_b {
-		position: absolute;
-		width: 248px;
-		height: 97px;
-		left: 273px;
-		top: 473.324px;
-		overflow: visible;
-	}
-	#Rectangle_7_b {
-		fill: rgba(0,0,0,0.161);
-	}
-	.Rectangle_7_b {
-		position: absolute;
-		overflow: visible;
-		width: 248px;
-		height: 66px;
-		left: 0px;
-		top: 31px;
-	}
-	#n_31 {
-		left: 24px;
-		top: 54px;
-		position: absolute;
-		overflow: visible;
-		width: 41px;
-		white-space: nowrap;
-		line-height: 33px;
-		margin-top: -4.5px;
-		text-align: left;
-		font-family: Sofia Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 24px;
-		color: rgba(255,255,255,1);
-	}
-	#CVV_ca {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 42px;
-		white-space: nowrap;
-		line-height: 33px;
-		margin-top: -6.5px;
-		text-align: left;
-		font-family: Sofia Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(255,255,255,1);
-	}
-	#circle-info {
-		position: absolute;
-		width: 14.518px;
-		height: 14.518px;
-		left: 44px;
-		top: 0.544px;
-		overflow: visible;
-	}
-	#Groupe_13 {
-		position: absolute;
-		width: 14.518px;
-		height: 14.518px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Trac_3 {
-		fill: rgba(255,255,255,1);
-	}
-	.Trac_3 {
-		overflow: visible;
-		position: absolute;
-		width: 14.518px;
-		height: 14.518px;
-		left: 0px;
-		top: 0px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Rectangle_1562 {
-		fill: rgba(242,249,255,1);
-		stroke: rgba(0,0,0,0);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_1562 {
-		position: absolute;
-		overflow: visible;
-		width: 50px;
-		height: 50px;
-		left: 0px;
-		top: 0px;
-	}
-	#Rectangle_1563 {
-		fill: rgba(242,249,255,1);
-		stroke: rgba(0,0,0,0);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_1563 {
-		position: absolute;
-		overflow: visible;
-		width: 50px;
-		height: 50px;
-		left: 0px;
-		top: 0px;
-	}
-	#Rectangle_1564 {
-		fill: rgba(242,249,255,1);
-		stroke: rgba(0,0,0,0);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_1564 {
-		position: absolute;
-		overflow: visible;
-		width: 50px;
-		height: 50px;
-		left: 0px;
-		top: 0px;
+		text-transform: capitalize;
 	}
 </style>
 <script id="applicationScript">
@@ -3802,211 +4216,313 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Payment_">
-	<svg class="Container">
-		<rect id="Container" rx="33" ry="33" x="0" y="0" width="640" height="807">
-		</rect>
-	</svg>
-	<svg class="Payment_BG">
-		<rect id="Payment_BG" rx="24" ry="24" x="0" y="0" width="599" height="763">
-		</rect>
-	</svg>
-	<div id="Payment">
-		<div id="Card">
-			<svg class="Rectangle_7">
-				<rect id="Rectangle_7" rx="16" ry="16" x="0" y="0" width="516" height="66">
+<div id="Pagner">
+	<div id="Order">
+		<svg class="Container">
+			<rect id="Container" rx="33" ry="33" x="0" y="0" width="1261" height="806">
+			</rect>
+		</svg>
+		<div id="Cart">
+			<svg class="Cart_BG">
+				<rect id="Cart_BG" rx="24" ry="24" x="0" y="0" width="1216" height="762">
 				</rect>
 			</svg>
-			<svg class="Rectangle_132">
-				<rect id="Rectangle_132" rx="8" ry="8" x="0" y="0" width="74" height="50">
-				</rect>
-			</svg>
-			<svg class="Rectangle_133">
-				<rect id="Rectangle_133" rx="8" ry="8" x="0" y="0" width="73" height="50">
-				</rect>
-			</svg>
-			<svg class="Rectangle_134">
-				<rect id="Rectangle_134" rx="8" ry="8" x="0" y="0" width="74" height="50">
-				</rect>
-			</svg>
-			<div id="n_234___3924___2394___3294">
-				<span>1234   3924   2394   3294</span>
-			</div>
-			<div id="Credit_card_number">
-				<span>Credit card number</span>
-			</div>
-		</div>
-		<div id="Name">
-			<svg class="Rectangle_7_w">
-				<rect id="Rectangle_7_w" rx="16" ry="16" x="0" y="0" width="516" height="66">
-				</rect>
-			</svg>
-			<div id="Howard_Pinsky">
-				<span>Howard Pinsky</span>
-			</div>
-			<div id="Name_of_card_holder">
-				<span>Name of card holder</span>
-			</div>
-		</div>
-		<div id="Exp">
-			<svg class="Rectangle_7_">
-				<rect id="Rectangle_7_" rx="16" ry="16" x="0" y="0" width="248" height="66">
-				</rect>
-			</svg>
-			<div id="n_225">
-				<span>02/25</span>
-			</div>
-			<div id="Expiration">
-				<span>Expiration</span>
-			</div>
-		</div>
-		<div id="Current">
-			<svg class="Card_">
-				<rect id="Card_" rx="8" ry="8" x="0" y="0" width="246" height="145">
-				</rect>
-			</svg>
-			<div id="Current_credit_card">
-				<span>Current credit card</span>
-			</div>
-			<div id="n_________3294">
-				<span>••••   ••••   ••••   3294</span>
-			</div>
-			<div id="Howard_Pinsky_">
-				<span>Howard Pinsky</span>
-			</div>
-			<div id="cc-visa">
-				<div id="Groupe_17">
-					<svg class="Trac_8" viewBox="0 32 25.988 20.213">
-						<path id="Trac_8" d="M 21.20987510681152 40.99197387695312 C 21.20987510681152 40.99197387695312 21.55277061462402 42.67035675048828 21.62946891784668 43.02227783203125 L 20.12253570556641 43.02227783203125 C 20.27142333984375 42.6207275390625 20.84441947937012 41.05965423583984 20.84441947937012 41.05965423583984 C 20.83539581298828 41.07318878173828 20.99330902099609 40.64907836914062 21.08354377746582 40.38739776611328 L 21.20987319946289 40.99197387695312 Z M 25.98784637451172 34.16565322875977 L 25.98784637451172 50.04711532592773 C 25.98784637451172 51.24273681640625 25.0178165435791 52.2127685546875 23.82219505310059 52.2127685546875 L 2.165653944015503 52.2127685546875 C 0.9700324535369873 52.2127685546875 -7.565037662971008e-08 51.24273681640625 -7.565037662971008e-08 50.04711532592773 L -7.565037662971008e-08 34.16565322875977 C -7.565037662971008e-08 32.97003173828125 0.9700324535369873 32 2.165653944015503 32 L 23.82219505310059 32 C 25.0178165435791 32 25.98784637451172 32.97003173828125 25.98784637451172 34.16565322875977 Z M 6.880463123321533 45.49924468994141 L 9.731907844543457 38.49696350097656 L 7.814401626586914 38.49696350097656 L 6.041272163391113 43.27944564819336 L 5.847265243530273 42.30941390991211 L 5.215616226196289 39.08800506591797 C 5.11184549331665 38.64133834838867 4.79150915145874 38.51500701904297 4.394473075866699 38.49696350097656 L 1.475351691246033 38.49696350097656 L 1.443769335746765 38.63682556152344 C 2.156630516052246 38.81729888916016 2.792791128158569 39.0789794921875 3.347740173339844 39.40834045410156 L 4.96295690536499 45.49924468994141 L 6.880463123321533 45.49924468994141 Z M 11.13958263397217 45.50826644897461 L 12.27655220031738 38.49696350097656 L 10.46281623840332 38.49696350097656 L 9.33035945892334 45.50826644897461 L 11.13958263397217 45.50826644897461 Z M 17.45156097412109 43.21628570556641 C 17.46058654785156 42.41769790649414 16.97331237792969 41.80860900878906 15.93109130859375 41.30780029296875 C 15.29492950439453 40.98746490478516 14.90691757202148 40.77089691162109 14.90691757202148 40.4415397644043 C 14.91594123840332 40.14376449584961 15.2362756729126 39.83696365356445 15.94913768768311 39.83696365356445 C 16.54018211364746 39.82342529296875 16.97331237792969 39.96329498291016 17.29816055297852 40.10315704345703 L 17.46058464050293 40.17985534667969 L 17.70873260498047 38.66390228271484 C 17.3523006439209 38.5240364074707 16.78381729125977 38.36611938476562 16.08449172973633 38.36611938476562 C 14.29331493377686 38.36611938476562 13.0345287322998 39.32261657714844 13.02550411224365 40.68517303466797 C 13.01197052001953 41.69129943847656 13.92786026000977 42.25076293945312 14.61365127563477 42.58914566040039 C 15.3129768371582 42.93204116821289 15.55210113525391 43.15763092041016 15.55210113525391 43.45991897583008 C 15.54307651519775 43.92914199829102 14.98361682891846 44.14570999145508 14.46476268768311 44.14570999145508 C 13.74287605285645 44.14570999145508 13.3548641204834 44.03291702270508 12.76382064819336 43.77123641967773 L 12.52469635009766 43.65843963623047 L 12.2720365524292 45.23305130004883 C 12.69614410400391 45.42705535888672 13.48119258880615 45.59850311279297 14.29331398010254 45.60752487182617 C 16.19728469848633 45.61204147338867 17.43802452087402 44.6690788269043 17.45155906677246 43.21628570556641 Z M 23.82219505310059 45.50826644897461 L 22.36038017272949 38.49696350097656 L 20.95721435546875 38.49696350097656 C 20.52408409118652 38.49696350097656 20.19472503662109 38.623291015625 20.00974082946777 39.0789794921875 L 17.31620788574219 45.50826644897461 L 19.22017860412598 45.50826644897461 C 19.22017860412598 45.50826644897461 19.53149223327637 44.64200592041016 19.59916877746582 44.45702362060547 L 21.92724609375 44.45702362060547 C 21.98138999938965 44.70516967773438 22.14381217956543 45.50826644897461 22.14381217956543 45.50826644897461 L 23.82219505310059 45.50826644897461 Z">
-						</path>
-					</svg>
+			<div id="Cart_o">
+				<div id="Order_summary">
+					<span>Order summary</span>
 				</div>
-			</div>
-		</div>
-		<div id="New">
-			<div id="Add_new_credit_card">
-				<span>Add new credit card</span>
-			</div>
-			<div id="Card_bd">
-				<div id="Placeholder">
-					<svg class="Card_bg">
-						<linearGradient id="Card_bg" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
-							<stop offset="0" stop-color="#155ec1" stop-opacity="1"></stop>
-							<stop offset="1" stop-color="#1a6dce" stop-opacity="1"></stop>
-						</linearGradient>
-						<rect id="Card_bg" rx="8" ry="8" x="0" y="0" width="246" height="145">
-						</rect>
-					</svg>
-					<div id="Add">
-						<svg class="Ellipse_4">
-							<ellipse id="Ellipse_4" rx="20.5" ry="20.5" cx="20.5" cy="20.5">
-							</ellipse>
-						</svg>
-						<svg class="Ligne_3" viewBox="0 0 3 9">
-							<path id="Ligne_3" d="M 0 0 L 0 9">
+				<div id="Remove_all">
+					<span>Remove all</span>
+				</div>
+				<div id="cart-shopping-fast">
+					<div id="Groupe_14">
+						<svg class="Trac_4" viewBox="0 32 28.381 12.062">
+							<path id="Trac_4" d="M 28.09385681152344 32.56468963623047 C 27.82295227050781 32.20580673217773 27.40996742248535 32 26.96030616760254 32 L 8.246265411376953 32 L 10.40852832794189 43.35232543945312 L 24.52824974060059 43.35232543945312 C 25.15945625305176 43.35232543945312 25.72002029418945 42.92829513549805 25.8925666809082 42.32267761230469 L 28.32529258728027 33.80914688110352 C 28.44861602783203 33.37678146362305 28.36409378051758 32.92361831665039 28.09385681152344 32.56468963623047 Z M 1.06428050994873 36.96664428710938 L 4.611882209777832 36.96664428710938 C 5.199719905853271 36.96664428710938 5.676162719726562 36.49010848999023 5.676162719726562 35.90236282348633 C 5.676162719726562 35.31452560424805 5.199719905853271 34.83808135986328 4.611882209777832 34.83808135986328 L 1.06428050994873 34.83808135986328 C 0.476531594991684 34.83808135986328 0 35.31452560424805 0 35.90236282348633 C 0 36.49010848999023 0.476531594991684 36.96664428710938 1.06428050994873 36.96664428710938 Z M 1.06428050994873 40.51424407958984 L 5.321402549743652 40.51424407958984 C 5.909239768981934 40.51424407958984 6.385683059692383 40.03771209716797 6.385683059692383 39.4499626159668 C 6.385683059692383 38.86212539672852 5.909239768981934 38.38568115234375 5.321402549743652 38.38568115234375 L 1.06428050994873 38.38568115234375 C 0.476531594991684 38.38568115234375 0 38.86212539672852 0 39.4499626159668 C 0 40.03771209716797 0.476531594991684 40.51424407958984 1.06428050994873 40.51424407958984 Z M 6.030922889709473 41.93328475952148 L 1.06428050994873 41.93328475952148 C 0.476531594991684 41.93328475952148 0 42.40972900390625 0 42.99756622314453 C 0 43.58531188964844 0.476531594991684 44.06184387207031 1.06428050994873 44.06184387207031 L 6.030922889709473 44.06184387207031 C 6.618760108947754 44.06184387207031 7.095203399658203 43.58531188964844 7.095203399658203 42.99756622314453 C 7.095203399658203 42.40972900390625 6.618760108947754 41.93328475952148 6.030922889709473 41.93328475952148 Z">
 							</path>
 						</svg>
-						<svg class="Ligne_4" viewBox="0 0 3 9">
-							<path id="Ligne_4" d="M 0 0 L 0 9">
+						<svg class="Trac_5" viewBox="64 0 22.705 22.705">
+							<path id="Trac_5" d="M 84.57608032226562 18.44752883911133 C 83.40050506591797 18.44752883911133 82.44752502441406 19.40050315856934 82.44752502441406 20.57608985900879 C 82.44752502441406 21.75167655944824 83.40050506591797 22.70465087890625 84.57608032226562 22.70465087890625 C 85.75167846679688 22.70465087890625 86.70465087890625 21.75167655944824 86.70465087890625 20.57608985900879 C 86.70465087890625 19.40050315856934 85.75167846679688 18.44752883911133 84.57608032226562 18.44752883911133 Z M 71.80472564697266 18.44752883911133 C 70.62913513183594 18.44752883911133 69.67616271972656 19.40050315856934 69.67616271972656 20.57608985900879 C 69.67616271972656 21.75167655944824 70.62913513183594 22.70465087890625 71.80472564697266 22.70465087890625 C 72.98030853271484 22.70465087890625 73.93328857421875 21.75167655944824 73.93328857421875 20.57608985900879 C 73.93328857421875 19.40050315856934 72.98030853271484 18.44752883911133 71.80472564697266 18.44752883911133 Z M 85.64037322998047 14.89992713928223 L 71.97584533691406 14.89992713928223 L 69.30268859863281 0.8651714324951172 C 69.20707702636719 0.3631858825683594 68.76819610595703 0 68.25720977783203 0 L 65.06427764892578 0 C 64.47648620605469 0 64 0.4764881134033203 64 1.064281463623047 C 64 1.652072906494141 64.47648620605469 2.128561019897461 65.06427764892578 2.128561019897461 L 67.37647247314453 2.128561019897461 L 70.04972839355469 16.16336059570312 C 70.14533233642578 16.66534614562988 70.58421325683594 17.02848815917969 71.09519958496094 17.02848815917969 L 85.64037322998047 17.02848815917969 C 86.22815704345703 17.02848815917969 86.70465087890625 16.55200004577637 86.70465087890625 15.96420669555664 C 86.70465087890625 15.37641334533691 86.22815704345703 14.89992713928223 85.64037322998047 14.89992713928223 Z">
 							</path>
 						</svg>
 					</div>
 				</div>
-				<div id="Enter_New">
-					<svg class="Shadow">
-						<rect id="Shadow" rx="8" ry="8" x="0" y="0" width="246" height="145">
-						</rect>
-					</svg>
-					<svg class="Card_bn">
-						<rect id="Card_bn" rx="8" ry="8" x="0" y="0" width="246" height="145">
-						</rect>
-					</svg>
-					<div id="Info">
-						<svg class="Rectangle_1545">
-							<rect id="Rectangle_1545" rx="4" ry="4" x="0" y="0" width="197" height="27">
+				<div id="Items">
+					<div id="Item">
+						<svg class="Item_x">
+							<rect id="Item_x" rx="23" ry="23" x="0" y="0" width="83" height="83">
 							</rect>
 						</svg>
-						<svg class="Rectangle_1546">
-							<rect id="Rectangle_1546" rx="4" ry="4" x="0" y="0" width="91" height="23">
+						<div id="Item_name_here">
+							<span>Item name here</span>
+						</div>
+						<div id="Sub_information">
+							<span>Sub information</span>
+						</div>
+						<div id="n_932">
+							<span>$19.32</span>
+						</div>
+						<div id="Quantity">
+							<div id="n_">
+								<span>1</span>
+							</div>
+							<div id="Minus">
+								<svg class="Ellipse_5">
+									<ellipse id="Ellipse_5" rx="15" ry="15" cx="15" cy="15">
+									</ellipse>
+								</svg>
+								<svg class="Ligne_5" viewBox="0 0 8 2">
+									<path id="Ligne_5" d="M 0 0 L 8 0">
+									</path>
+								</svg>
+							</div>
+							<div id="Plus">
+								<svg class="Ellipse_5_">
+									<ellipse id="Ellipse_5_" rx="15" ry="15" cx="15" cy="15">
+									</ellipse>
+								</svg>
+								<svg class="Ligne_5_" viewBox="0 0 8 2">
+									<path id="Ligne_5_" d="M 0 0 L 8 0">
+									</path>
+								</svg>
+								<svg class="Ligne_6" viewBox="0 0 8 2">
+									<path id="Ligne_6" d="M 0 0 L 8 0">
+									</path>
+								</svg>
+							</div>
+						</div>
+						<div id="trash-can">
+							<div id="Groupe_15">
+								<svg class="Trac_6" viewBox="32 96 10.805 11.706">
+									<path id="Trac_6" d="M 32 96 L 32 106.3550720214844 C 32 107.1007385253906 32.60498046875 107.7057189941406 33.35065841674805 107.7057189941406 L 41.45462417602539 107.7057189941406 C 42.20029830932617 107.7057189941406 42.80528259277344 107.1007385253906 42.80528259277344 106.3550720214844 L 42.80528259277344 96 L 32 96 Z M 35.15154266357422 105.00439453125 C 35.15154266357422 105.2541351318359 34.95105361938477 105.4546203613281 34.70132064819336 105.4546203613281 C 34.45158767700195 105.4546203613281 34.2510986328125 105.2541351318359 34.2510986328125 105.00439453125 L 34.2510986328125 98.70132446289062 C 34.2510986328125 98.45158386230469 34.45158767700195 98.2510986328125 34.70132064819336 98.2510986328125 C 34.95105361938477 98.2510986328125 35.15154266357422 98.45158386230469 35.15154266357422 98.70132446289062 L 35.15154266357422 105.00439453125 Z M 37.85285949707031 105.00439453125 C 37.85285949707031 105.2541351318359 37.65237426757812 105.4546203613281 37.40264129638672 105.4546203613281 C 37.15291213989258 105.4546203613281 36.95242309570312 105.2541351318359 36.95242309570312 105.00439453125 L 36.95242309570312 98.70132446289062 C 36.95242309570312 98.45158386230469 37.15291213989258 98.2510986328125 37.40264129638672 98.2510986328125 C 37.65237426757812 98.2510986328125 37.85285949707031 98.45158386230469 37.85285949707031 98.70132446289062 L 37.85285949707031 105.00439453125 Z M 40.55418395996094 105.00439453125 C 40.55418395996094 105.2541351318359 40.35369491577148 105.4546203613281 40.10396194458008 105.4546203613281 C 39.85423278808594 105.4546203613281 39.65374374389648 105.2541351318359 39.65374374389648 105.00439453125 L 39.65374374389648 98.70132446289062 C 39.65374374389648 98.45158386230469 39.85423278808594 98.2510986328125 40.10396194458008 98.2510986328125 C 40.35369491577148 98.2510986328125 40.55418395996094 98.45158386230469 40.55418395996094 98.70132446289062 L 40.55418395996094 105.00439453125 Z">
+									</path>
+								</svg>
+								<svg class="Trac_7" viewBox="0 0.001 12.606 2.701">
+									<path id="Trac_7" d="M 12.15594577789307 0.9014406204223633 L 9.004404067993164 0.9014406204223633 L 8.67861270904541 0.2498311996459961 C 8.602346420288086 0.09731054306030273 8.446445465087891 0.0009768009185791016 8.275919914245605 0.001000404357910156 L 4.330246448516846 0.001000165939331055 C 4.159696578979492 0.001000165939331055 4.00380802154541 0.09733915328979492 3.927540302276611 0.2498555183410645 L 3.60176157951355 0.9014406204223633 L 0.4502201974391937 0.9014406204223633 C 0.2015860825777054 0.9014406204223633 0 1.102970480918884 0 1.351660966873169 L 0 2.252101182937622 C 0 2.500735282897949 0.2015861123800278 2.702321290969849 0.4502201974391937 2.702321290969849 L 12.15594577789307 2.702321290969849 C 12.40463542938232 2.702321290969849 12.60616588592529 2.500735282897949 12.60616588592529 2.252101182937622 L 12.60616588592529 1.351660966873169 C 12.60616588592529 1.102970480918884 12.40463542938232 0.9014406204223633 12.15594577789307 0.9014406204223633 Z">
+									</path>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div id="Item_be">
+						<svg class="Item_bf">
+							<rect id="Item_bf" rx="23" ry="23" x="0" y="0" width="83" height="83">
 							</rect>
 						</svg>
-						<svg class="Rectangle_1548">
-							<rect id="Rectangle_1548" rx="4" ry="4" x="0" y="0" width="101" height="23">
+						<div id="Item_name_here_bg">
+							<span>Item name here</span>
+						</div>
+						<div id="Sub_information_bh">
+							<span>Sub information</span>
+						</div>
+						<div id="n_018">
+							<span>$10.18</span>
+						</div>
+						<div id="Quantity_bj">
+							<div id="n__bk">
+								<span>1</span>
+							</div>
+							<div id="Minus_bl">
+								<svg class="Ellipse_5_bm">
+									<ellipse id="Ellipse_5_bm" rx="15" ry="15" cx="15" cy="15">
+									</ellipse>
+								</svg>
+								<svg class="Ligne_5_bn" viewBox="0 0 8 2">
+									<path id="Ligne_5_bn" d="M 0 0 L 8 0">
+									</path>
+								</svg>
+							</div>
+							<div id="Plus_bo">
+								<svg class="Ellipse_5_bp">
+									<ellipse id="Ellipse_5_bp" rx="15" ry="15" cx="15" cy="15">
+									</ellipse>
+								</svg>
+								<svg class="Ligne_5_bq" viewBox="0 0 8 2">
+									<path id="Ligne_5_bq" d="M 0 0 L 8 0">
+									</path>
+								</svg>
+								<svg class="Ligne_6_br" viewBox="0 0 8 2">
+									<path id="Ligne_6_br" d="M 0 0 L 8 0">
+									</path>
+								</svg>
+							</div>
+						</div>
+						<div id="trash-can_bs">
+							<div id="Groupe_15_bt">
+								<svg class="Trac_6_bu" viewBox="32 96 10.805 11.706">
+									<path id="Trac_6_bu" d="M 32 96 L 32 106.3550720214844 C 32 107.1007385253906 32.60498046875 107.7057189941406 33.35065841674805 107.7057189941406 L 41.45462417602539 107.7057189941406 C 42.20029830932617 107.7057189941406 42.80528259277344 107.1007385253906 42.80528259277344 106.3550720214844 L 42.80528259277344 96 L 32 96 Z M 35.15154266357422 105.00439453125 C 35.15154266357422 105.2541351318359 34.95105361938477 105.4546203613281 34.70132064819336 105.4546203613281 C 34.45158767700195 105.4546203613281 34.2510986328125 105.2541351318359 34.2510986328125 105.00439453125 L 34.2510986328125 98.70132446289062 C 34.2510986328125 98.45158386230469 34.45158767700195 98.2510986328125 34.70132064819336 98.2510986328125 C 34.95105361938477 98.2510986328125 35.15154266357422 98.45158386230469 35.15154266357422 98.70132446289062 L 35.15154266357422 105.00439453125 Z M 37.85285949707031 105.00439453125 C 37.85285949707031 105.2541351318359 37.65237426757812 105.4546203613281 37.40264129638672 105.4546203613281 C 37.15291213989258 105.4546203613281 36.95242309570312 105.2541351318359 36.95242309570312 105.00439453125 L 36.95242309570312 98.70132446289062 C 36.95242309570312 98.45158386230469 37.15291213989258 98.2510986328125 37.40264129638672 98.2510986328125 C 37.65237426757812 98.2510986328125 37.85285949707031 98.45158386230469 37.85285949707031 98.70132446289062 L 37.85285949707031 105.00439453125 Z M 40.55418395996094 105.00439453125 C 40.55418395996094 105.2541351318359 40.35369491577148 105.4546203613281 40.10396194458008 105.4546203613281 C 39.85423278808594 105.4546203613281 39.65374374389648 105.2541351318359 39.65374374389648 105.00439453125 L 39.65374374389648 98.70132446289062 C 39.65374374389648 98.45158386230469 39.85423278808594 98.2510986328125 40.10396194458008 98.2510986328125 C 40.35369491577148 98.2510986328125 40.55418395996094 98.45158386230469 40.55418395996094 98.70132446289062 L 40.55418395996094 105.00439453125 Z">
+									</path>
+								</svg>
+								<svg class="Trac_7_bv" viewBox="0 0.001 12.606 2.701">
+									<path id="Trac_7_bv" d="M 12.15594577789307 0.9014406204223633 L 9.004404067993164 0.9014406204223633 L 8.67861270904541 0.2498311996459961 C 8.602346420288086 0.09731054306030273 8.446445465087891 0.0009768009185791016 8.275919914245605 0.001000404357910156 L 4.330246448516846 0.001000165939331055 C 4.159696578979492 0.001000165939331055 4.00380802154541 0.09733915328979492 3.927540302276611 0.2498555183410645 L 3.60176157951355 0.9014406204223633 L 0.4502201974391937 0.9014406204223633 C 0.2015860825777054 0.9014406204223633 0 1.102970480918884 0 1.351660966873169 L 0 2.252101182937622 C 0 2.500735282897949 0.2015861123800278 2.702321290969849 0.4502201974391937 2.702321290969849 L 12.15594577789307 2.702321290969849 C 12.40463542938232 2.702321290969849 12.60616588592529 2.500735282897949 12.60616588592529 2.252101182937622 L 12.60616588592529 1.351660966873169 C 12.60616588592529 1.102970480918884 12.40463542938232 0.9014406204223633 12.15594577789307 0.9014406204223633 Z">
+									</path>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div id="Item_bw">
+						<svg class="Item_bx">
+							<rect id="Item_bx" rx="23" ry="23" x="0" y="0" width="83" height="83">
 							</rect>
 						</svg>
-						<div id="n_________3294_bs">
-							<span>••••   ••••   ••••   3294</span>
+						<div id="Item_name_here_by">
+							<span>Item name here</span>
 						</div>
-						<div id="n_22023">
-							<span>12/2023</span>
+						<div id="Sub_information_bz">
+							<span>Sub information</span>
 						</div>
-						<div id="n_34">
-							<span>234</span>
+						<div id="n_911">
+							<span>$59.11</span>
 						</div>
-						<div id="Credit_card_number_bv">
-							<span>Credit card number</span>
+						<div id="Quantity_b">
+							<div id="n__b">
+								<span>1</span>
+							</div>
+							<div id="Minus_b">
+								<svg class="Ellipse_5_b">
+									<ellipse id="Ellipse_5_b" rx="15" ry="15" cx="15" cy="15">
+									</ellipse>
+								</svg>
+								<svg class="Ligne_5_b" viewBox="0 0 8 2">
+									<path id="Ligne_5_b" d="M 0 0 L 8 0">
+									</path>
+								</svg>
+							</div>
+							<div id="Plus_b">
+								<svg class="Ellipse_5_ca">
+									<ellipse id="Ellipse_5_ca" rx="15" ry="15" cx="15" cy="15">
+									</ellipse>
+								</svg>
+								<svg class="Ligne_5_ca" viewBox="0 0 8 2">
+									<path id="Ligne_5_ca" d="M 0 0 L 8 0">
+									</path>
+								</svg>
+								<svg class="Ligne_6_b" viewBox="0 0 8 2">
+									<path id="Ligne_6_b" d="M 0 0 L 8 0">
+									</path>
+								</svg>
+							</div>
 						</div>
-						<div id="Expiration_bw">
-							<span>Expiration</span>
+						<div id="trash-can_ca">
+							<div id="Groupe_15_cb">
+								<svg class="Trac_6_cc" viewBox="32 96 10.805 11.706">
+									<path id="Trac_6_cc" d="M 32 96 L 32 106.3550720214844 C 32 107.1007385253906 32.60498046875 107.7057189941406 33.35065841674805 107.7057189941406 L 41.45462417602539 107.7057189941406 C 42.20029830932617 107.7057189941406 42.80528259277344 107.1007385253906 42.80528259277344 106.3550720214844 L 42.80528259277344 96 L 32 96 Z M 35.15154266357422 105.00439453125 C 35.15154266357422 105.2541351318359 34.95105361938477 105.4546203613281 34.70132064819336 105.4546203613281 C 34.45158767700195 105.4546203613281 34.2510986328125 105.2541351318359 34.2510986328125 105.00439453125 L 34.2510986328125 98.70132446289062 C 34.2510986328125 98.45158386230469 34.45158767700195 98.2510986328125 34.70132064819336 98.2510986328125 C 34.95105361938477 98.2510986328125 35.15154266357422 98.45158386230469 35.15154266357422 98.70132446289062 L 35.15154266357422 105.00439453125 Z M 37.85285949707031 105.00439453125 C 37.85285949707031 105.2541351318359 37.65237426757812 105.4546203613281 37.40264129638672 105.4546203613281 C 37.15291213989258 105.4546203613281 36.95242309570312 105.2541351318359 36.95242309570312 105.00439453125 L 36.95242309570312 98.70132446289062 C 36.95242309570312 98.45158386230469 37.15291213989258 98.2510986328125 37.40264129638672 98.2510986328125 C 37.65237426757812 98.2510986328125 37.85285949707031 98.45158386230469 37.85285949707031 98.70132446289062 L 37.85285949707031 105.00439453125 Z M 40.55418395996094 105.00439453125 C 40.55418395996094 105.2541351318359 40.35369491577148 105.4546203613281 40.10396194458008 105.4546203613281 C 39.85423278808594 105.4546203613281 39.65374374389648 105.2541351318359 39.65374374389648 105.00439453125 L 39.65374374389648 98.70132446289062 C 39.65374374389648 98.45158386230469 39.85423278808594 98.2510986328125 40.10396194458008 98.2510986328125 C 40.35369491577148 98.2510986328125 40.55418395996094 98.45158386230469 40.55418395996094 98.70132446289062 L 40.55418395996094 105.00439453125 Z">
+									</path>
+								</svg>
+								<svg class="Trac_7_cd" viewBox="0 0.001 12.606 2.701">
+									<path id="Trac_7_cd" d="M 12.15594577789307 0.9014406204223633 L 9.004404067993164 0.9014406204223633 L 8.67861270904541 0.2498311996459961 C 8.602346420288086 0.09731054306030273 8.446445465087891 0.0009768009185791016 8.275919914245605 0.001000404357910156 L 4.330246448516846 0.001000165939331055 C 4.159696578979492 0.001000165939331055 4.00380802154541 0.09733915328979492 3.927540302276611 0.2498555183410645 L 3.60176157951355 0.9014406204223633 L 0.4502201974391937 0.9014406204223633 C 0.2015860825777054 0.9014406204223633 0 1.102970480918884 0 1.351660966873169 L 0 2.252101182937622 C 0 2.500735282897949 0.2015861123800278 2.702321290969849 0.4502201974391937 2.702321290969849 L 12.15594577789307 2.702321290969849 C 12.40463542938232 2.702321290969849 12.60616588592529 2.500735282897949 12.60616588592529 2.252101182937622 L 12.60616588592529 1.351660966873169 C 12.60616588592529 1.102970480918884 12.40463542938232 0.9014406204223633 12.15594577789307 0.9014406204223633 Z">
+									</path>
+								</svg>
+							</div>
 						</div>
-						<div id="CVV">
-							<span>CVV</span>
+					</div>
+					<div id="Item_ce">
+						<svg class="Item_cf">
+							<rect id="Item_cf" rx="23" ry="23" x="0" y="0" width="83" height="83">
+							</rect>
+						</svg>
+						<div id="Item_name_here_cg">
+							<span>Item name here</span>
+						</div>
+						<div id="Sub_information_ch">
+							<span>Sub information</span>
+						</div>
+						<div id="n_560">
+							<span>$45.60</span>
+						</div>
+						<div id="Quantity_cj">
+							<div id="n__ck">
+								<span>1</span>
+							</div>
+							<div id="Minus_cl">
+								<svg class="Ellipse_5_cm">
+									<ellipse id="Ellipse_5_cm" rx="15" ry="15" cx="15" cy="15">
+									</ellipse>
+								</svg>
+								<svg class="Ligne_5_cn" viewBox="0 0 8 2">
+									<path id="Ligne_5_cn" d="M 0 0 L 8 0">
+									</path>
+								</svg>
+							</div>
+							<div id="Plus_co">
+								<svg class="Ellipse_5_cp">
+									<ellipse id="Ellipse_5_cp" rx="15" ry="15" cx="15" cy="15">
+									</ellipse>
+								</svg>
+								<svg class="Ligne_5_cq" viewBox="0 0 8 2">
+									<path id="Ligne_5_cq" d="M 0 0 L 8 0">
+									</path>
+								</svg>
+								<svg class="Ligne_6_cr" viewBox="0 0 8 2">
+									<path id="Ligne_6_cr" d="M 0 0 L 8 0">
+									</path>
+								</svg>
+							</div>
+						</div>
+						<div id="trash-can_cs">
+							<div id="Groupe_15_ct">
+								<svg class="Trac_6_cu" viewBox="32 96 10.805 11.706">
+									<path id="Trac_6_cu" d="M 32 96 L 32 106.3550720214844 C 32 107.1007385253906 32.60498046875 107.7057189941406 33.35065841674805 107.7057189941406 L 41.45462417602539 107.7057189941406 C 42.20029830932617 107.7057189941406 42.80528259277344 107.1007385253906 42.80528259277344 106.3550720214844 L 42.80528259277344 96 L 32 96 Z M 35.15154266357422 105.00439453125 C 35.15154266357422 105.2541351318359 34.95105361938477 105.4546203613281 34.70132064819336 105.4546203613281 C 34.45158767700195 105.4546203613281 34.2510986328125 105.2541351318359 34.2510986328125 105.00439453125 L 34.2510986328125 98.70132446289062 C 34.2510986328125 98.45158386230469 34.45158767700195 98.2510986328125 34.70132064819336 98.2510986328125 C 34.95105361938477 98.2510986328125 35.15154266357422 98.45158386230469 35.15154266357422 98.70132446289062 L 35.15154266357422 105.00439453125 Z M 37.85285949707031 105.00439453125 C 37.85285949707031 105.2541351318359 37.65237426757812 105.4546203613281 37.40264129638672 105.4546203613281 C 37.15291213989258 105.4546203613281 36.95242309570312 105.2541351318359 36.95242309570312 105.00439453125 L 36.95242309570312 98.70132446289062 C 36.95242309570312 98.45158386230469 37.15291213989258 98.2510986328125 37.40264129638672 98.2510986328125 C 37.65237426757812 98.2510986328125 37.85285949707031 98.45158386230469 37.85285949707031 98.70132446289062 L 37.85285949707031 105.00439453125 Z M 40.55418395996094 105.00439453125 C 40.55418395996094 105.2541351318359 40.35369491577148 105.4546203613281 40.10396194458008 105.4546203613281 C 39.85423278808594 105.4546203613281 39.65374374389648 105.2541351318359 39.65374374389648 105.00439453125 L 39.65374374389648 98.70132446289062 C 39.65374374389648 98.45158386230469 39.85423278808594 98.2510986328125 40.10396194458008 98.2510986328125 C 40.35369491577148 98.2510986328125 40.55418395996094 98.45158386230469 40.55418395996094 98.70132446289062 L 40.55418395996094 105.00439453125 Z">
+									</path>
+								</svg>
+								<svg class="Trac_7_cv" viewBox="0 0.001 12.606 2.701">
+									<path id="Trac_7_cv" d="M 12.15594577789307 0.9014406204223633 L 9.004404067993164 0.9014406204223633 L 8.67861270904541 0.2498311996459961 C 8.602346420288086 0.09731054306030273 8.446445465087891 0.0009768009185791016 8.275919914245605 0.001000404357910156 L 4.330246448516846 0.001000165939331055 C 4.159696578979492 0.001000165939331055 4.00380802154541 0.09733915328979492 3.927540302276611 0.2498555183410645 L 3.60176157951355 0.9014406204223633 L 0.4502201974391937 0.9014406204223633 C 0.2015860825777054 0.9014406204223633 0 1.102970480918884 0 1.351660966873169 L 0 2.252101182937622 C 0 2.500735282897949 0.2015861123800278 2.702321290969849 0.4502201974391937 2.702321290969849 L 12.15594577789307 2.702321290969849 C 12.40463542938232 2.702321290969849 12.60616588592529 2.500735282897949 12.60616588592529 2.252101182937622 L 12.60616588592529 1.351660966873169 C 12.60616588592529 1.102970480918884 12.40463542938232 0.9014406204223633 12.15594577789307 0.9014406204223633 Z">
+									</path>
+								</svg>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div id="Button">
-			<svg class="Rectangle_124">
-				<rect id="Rectangle_124" rx="8" ry="8" x="0" y="0" width="248" height="56">
-				</rect>
-			</svg>
-			<div id="Make_Payment">
-				<span>Make Payment</span>
-			</div>
-		</div>
-		<div id="Button_b">
-			<svg class="Rectangle_124_b">
-				<rect id="Rectangle_124_b" rx="8" ry="8" x="0" y="0" width="248" height="56">
-				</rect>
-			</svg>
-			<div id="Cancel">
-				<span>Cancel</span>
-			</div>
-		</div>
-		<div id="CVV_b">
-			<svg class="Rectangle_7_b">
-				<rect id="Rectangle_7_b" rx="16" ry="16" x="0" y="0" width="248" height="66">
-				</rect>
-			</svg>
-			<div id="n_31">
-				<span>231</span>
-			</div>
-			<div id="CVV_ca">
-				<span>CVV</span>
-			</div>
-			<div id="circle-info">
-				<div id="Groupe_13">
-					<svg class="Trac_3" viewBox="16 16 14.518 14.518">
-						<path id="Trac_3" d="M 23.25878715515137 16 C 19.24979019165039 16 16 19.25157356262207 16 23.25878715515137 C 16 27.26860237121582 19.24979019165039 30.51757431030273 23.25878715515137 30.51757431030273 C 27.26778411865234 30.51757431030273 30.51757431030273 27.26860237121582 30.51757431030273 23.25878715515137 C 30.51757431030273 19.25157356262207 27.26778411865234 16 23.25878715515137 16 Z M 23.25878715515137 19.38743209838867 C 23.79333686828613 19.38743209838867 24.22662544250488 19.82072448730469 24.22662544250488 20.35527229309082 C 24.22662544250488 20.88976097106934 23.79333686828613 21.32311058044434 23.25878715515137 21.32311058044434 C 22.7242374420166 21.32311058044434 22.29094886779785 20.88976097106934 22.29094886779785 20.35527229309082 C 22.29094886779785 19.82072448730469 22.7242374420166 19.38743209838867 23.25878715515137 19.38743209838867 Z M 24.46858406066895 27.13014030456543 L 22.04899024963379 27.13014030456543 C 21.64824485778809 27.13014030456543 21.32311058044434 26.80500602722168 21.32311058044434 26.40426254272461 C 21.32311058044434 26.00351524353027 21.64824485778809 25.67838287353516 22.04899024963379 25.67838287353516 L 22.53290748596191 25.67838287353516 L 22.53290748596191 23.74270439147949 L 22.29094886779785 23.74270439147949 C 21.89020347595215 23.74270439147949 21.56507110595703 23.41757202148438 21.56507110595703 23.01682662963867 C 21.56507110595703 22.61608123779297 21.89020347595215 22.29094886779785 22.29094886779785 22.29094886779785 L 23.25878715515137 22.29094886779785 C 23.65953254699707 22.29094886779785 23.98466491699219 22.61608123779297 23.98466491699219 23.01682662963867 L 23.98466491699219 25.67838287353516 L 24.46858406066895 25.67838287353516 C 24.86933135986328 25.67838287353516 25.19446563720703 26.00351524353027 25.19446563720703 26.40426254272461 C 25.19446563720703 26.80500602722168 24.86933135986328 27.13014030456543 24.46858406066895 27.13014030456543 Z">
-						</path>
-					</svg>
+				<div id="Totals">
+					<div id="n_3421">
+						<span>$134.21</span>
+					</div>
+					<div id="n_23">
+						<span>$3.23</span>
+					</div>
+					<div id="n_51">
+						<span>$5.51</span>
+					</div>
+					<div id="n_4295">
+						<span>$142.95</span>
+					</div>
+					<div id="Subtotal">
+						<span>Subtotal</span>
+					</div>
+					<div id="Shipping_fees">
+						<span>Shipping fees</span>
+					</div>
+					<div id="Taxes">
+						<span>Taxes</span>
+					</div>
+					<div id="Total_including_tax">
+						<span>Total (including tax)</span>
+					</div>
 				</div>
+				<svg class="Separator" viewBox="0 0 1128.393 1">
+					<path id="Separator" d="M 0 0 L 1128.393310546875 0">
+					</path>
+				</svg>
 			</div>
 		</div>
 	</div>
-	<svg class="Rectangle_1562">
-		<rect id="Rectangle_1562" rx="0" ry="0" x="0" y="0" width="50" height="50">
-		</rect>
-	</svg>
-	<svg class="Rectangle_1563">
-		<rect id="Rectangle_1563" rx="0" ry="0" x="0" y="0" width="50" height="50">
-		</rect>
-	</svg>
-	<svg class="Rectangle_1564">
-		<rect id="Rectangle_1564" rx="0" ry="0" x="0" y="0" width="50" height="50">
-		</rect>
-	</svg>
+	<div id="Button_payment">
+		<svg class="Rectangle_124">
+			<rect id="Rectangle_124" rx="8" ry="8" x="0" y="0" width="340" height="56">
+			</rect>
+		</svg>
+		<div id="Payment">
+			<span>Payment</span>
+		</div>
+	</div>
+	<div id="Button_retour">
+		<svg class="Rectangle_124_da">
+			<rect id="Rectangle_124_da" rx="8" ry="8" x="0" y="0" width="340" height="56">
+			</rect>
+		</svg>
+		<div id="Retour">
+			<span>Retour</span>
+		</div>
+	</div>
 </div>
 </body>
 </html>
