@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c7bdcc9-78b1-4e74-8d59-4bb78e7bb87f" name="Changes" comment="Bootstrap CSS Install">
-      <change beforePath="$PROJECT_DIR$/Panier.css" beforeDir="false" afterPath="$PROJECT_DIR$/Panier.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Panier.html" beforeDir="false" afterPath="$PROJECT_DIR$/Panier.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +59,7 @@
       <updated>1695294665910</updated>
       <workItem from="1695294667212" duration="3237000" />
       <workItem from="1695645560856" duration="1220000" />
+      <workItem from="1695900290198" duration="615000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap CSS Install">
       <option name="closed" value="true" />
