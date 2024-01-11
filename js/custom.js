@@ -23,8 +23,6 @@
 	};
 	tinyslider();
 
-	
-
 
 	var sitePlusMinus = function() {
 
