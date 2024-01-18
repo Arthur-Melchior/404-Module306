@@ -406,7 +406,6 @@ a {
       content: "";
       position: absolute;
       border-radius: 20px;
-      background: #dce5e4;
       width: 98px;
       height: 98px;
       top: 50%;
@@ -652,7 +651,6 @@ a {
     height: 50px;
     line-height: 50px;
     text-align: center;
-    background: #eff2f1;
     margin-right: 20px;
     color: #ffffff; }
 

@@ -6,8 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="6c7bdcc9-78b1-4e74-8d59-4bb78e7bb87f" name="Changes" comment="Del About-us">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/0-images/30576685_7705305.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/0-images/7748166.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/0-images/formes-3d-colorees-dans-style-vaporwave avec arrière-plan supprimé.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bowl-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bowl-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/couch.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/couch.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/person-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/person-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/person_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/person_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/person_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/person_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/product-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/product-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/product-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/product-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/product-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/product-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +88,9 @@
       <workItem from="1701951477627" duration="2223000" />
       <workItem from="1704306733895" duration="1617000" />
       <workItem from="1704635055428" duration="598000" />
-      <workItem from="1704975404191" duration="2430000" />
+      <workItem from="1704975404191" duration="2574000" />
+      <workItem from="1705392386638" duration="33000" />
+      <workItem from="1705579844142" duration="1947000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap CSS Install">
       <option name="closed" value="true" />
