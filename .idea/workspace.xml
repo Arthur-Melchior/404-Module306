@@ -7,17 +7,11 @@
     <list default="true" id="6c7bdcc9-78b1-4e74-8d59-4bb78e7bb87f" name="Changes" comment="Del About-us">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/couch.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/0-images/couch.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/0-images/formes-3d-colorees-dans-style-vaporwave.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thankyou.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yxy/couch.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yxy/product-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yxy/product-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yxy/product-3.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +28,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/checkout.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -88,7 +85,9 @@
       <workItem from="1706703198547" duration="552000" />
       <workItem from="1706704046333" duration="866000" />
       <workItem from="1707118664126" duration="597000" />
-      <workItem from="1707394301152" duration="1607000" />
+      <workItem from="1707394301152" duration="2082000" />
+      <workItem from="1707464146167" duration="25000" />
+      <workItem from="1708603981519" duration="2167000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap CSS Install">
       <option name="closed" value="true" />

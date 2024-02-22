@@ -688,7 +688,7 @@ textarea {
   border-bottom-width: 1px !important; }
 
 .site-block-order-table td, .site-block-order-table th {
-  color: #000000; }
+  color: #ffffff; }
 
 .couponcode-wrap input {
   border-radius: 10px !important; }
@@ -706,3 +706,7 @@ textarea {
     height: 50px;
     border-radius: 50%;
     background: rgba(59, 93, 80, 0.2); }
+
+  .bg-purple {
+    background: #001f3f;
+  }
