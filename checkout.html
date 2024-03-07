@@ -125,39 +125,45 @@
 		                  </tbody>
 		                </table>
 
-		                <div class="border p-3 mb-3">
-		                  <h3 class="h6 mb-0"><a class="d-block" data-bs-toggle="collapse" href="#collapsebank" role="button" aria-expanded="false" aria-controls="collapsebank">Direct Bank Transfer</a></h3>
+						  <div class="border p-3 mb-3">
+							  <h3 class="h6 mb-4">Paiement par Carte de Crédit</h3>
 
-		                  <div class="collapse" id="collapsebank">
-		                    <div class="py-2">
-		                      <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
-		                    </div>
-		                  </div>
-		                </div>
+							  <div id="payment-methods">
+								  <div class="container">
+									  <div class="row">
+											  <form id="payment-form">
+												  <div class="form-group">
+													  <label for="card-holder-name">Nom du titulaire de la carte</label>
+													  <input type="text" class="form-control" id="card-holder-name" required>
+												  </div>
+												  <div class="form-group">
+													  <label for="card-element-number">Numéro de la carte</label>
+													  <input id="card-element-number" class="form-control">
+														  <!-- Stripe Card Element -->
+													  </input>
+												  </div>
+												  <div class="form-group row">
+													  <div class="form-group col-md-6">
+														  <label for="card-element-number">Date</label>
+														  <input id="card-element-date" class="form-control">
+														  <!-- Stripe Card Element -->
+														  </input>
+													  </div>
+													  <div class="form-group col-md-6">
+														  <label for="card-element-number">Numéro ccv</label>
+														  <input id="card-element-security" class="form-control">
+														  <!-- Stripe Card Element -->
+														  </input>
+													  </div>
+												  </div>
+												  <div id="card-errors" role="alert" class="text-danger"></div>
+												  <button id="submit-payment-btn" class="btn btn-block mt-4" onclick="window.location='thankyou.html'">Payer</button>
+											  </form>
+									  </div>
+								  </div>
 
-		                <div class="border p-3 mb-3">
-		                  <h3 class="h6 mb-0"><a class="d-block" data-bs-toggle="collapse" href="#collapsecheque" role="button" aria-expanded="false" aria-controls="collapsecheque">Cheque Payment</a></h3>
-
-		                  <div class="collapse" id="collapsecheque">
-		                    <div class="py-2">
-		                      <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
-		                    </div>
-		                  </div>
-		                </div>
-
-		                <div class="border p-3 mb-5">
-		                  <h3 class="h6 mb-0"><a class="d-block" data-bs-toggle="collapse" href="#collapsepaypal" role="button" aria-expanded="false" aria-controls="collapsepaypal">Paypal</a></h3>
-
-		                  <div class="collapse" id="collapsepaypal">
-		                    <div class="py-2">
-		                      <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
-		                    </div>
-		                  </div>
-		                </div>
-
-		                <div class="form-group">
-		                  <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location='thankyou.html'">Place Order</button>
-		                </div>
+							  </div>
+						  </div>
 
 		              </div>
 		            </div>
@@ -201,6 +207,6 @@
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
-	</body>
+	</body><script src="https://js.stripe.com/v3/"></script>
 
 </html>
