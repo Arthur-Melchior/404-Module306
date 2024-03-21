@@ -1,212 +1,212 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <link rel="shortcut icon" href="favicon.png">
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="favicon.png">
 
-  <meta name="description" content="" />
-  <meta name="keywords" content="bootstrap, bootstrap4" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap4" />
 
-		<!-- Bootstrap CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/tiny-slider.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<title>checkout</title>
-	</head>
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/tiny-slider.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<title>Validation de la commande</title>
+</head>
 
-	<body>
+<body>
 
-		<!-- Start Header/Navigation -->
-		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="DNS navigation bar">
+<!-- Début En-tête/Navigation -->
+<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Barre de navigation DNS">
 
-			<div class="container">
-				<a class="navbar-brand" href="index.html">DNS<span>.</span></a>
+	<div class="container">
+		<a class="navbar-brand" href="index.html">DNS<span>.</span></a>
 
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsDNS" aria-controls="navbarsDNS" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsDNS" aria-controls="navbarsDNS" aria-expanded="false" aria-label="Basculer la navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-				<div class="collapse navbar-collapse" id="navbarsDNS">
-					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li><a class="nav-link" href="index.html">Home</a></li>
-						<li><a class="nav-link" href="shop.html">Shop</a></li>
-						<li><a class="nav-link" href="contact.html">Contact us</a></li>
-					</ul>
+		<div class="collapse navbar-collapse" id="navbarsDNS">
+			<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+				<li><a class="nav-link" href="index.html">Accueil</a></li>
+				<li><a class="nav-link" href="shop.html">Boutique</a></li>
+				<li><a class="nav-link" href="contact.html">Nous contacter</a></li>
+			</ul>
 
-					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
-					</ul>
+			<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+				<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
+			</ul>
+		</div>
+	</div>
+
+</nav>
+<!-- Fin En-tête/Navigation -->
+
+<!-- Début Section Héro -->
+<div class="hero">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-5">
+				<div class="intro-excerpt">
+					<h1>Validation de la commande</h1>
 				</div>
 			</div>
-				
-		</nav>
-		<!-- End Header/Navigation -->
+			<div class="col-lg-7">
 
-		<!-- Start Hero Section -->
-			<div class="hero">
-				<div class="container">
-					<div class="row justify-content-between">
-						<div class="col-lg-5">
-							<div class="intro-excerpt">
-								<h1>Checkout</h1>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Fin Section Héro -->
+
+<div class="untree_co-section">
+	<div class="container">
+		<div class="row mb-5">
+			<div class="row">
+				<div class="col-md-6 mb-5 mb-md-0">
+					<h2 class="h3 mb-3">Détails de facturation</h2>
+					<div class="p-3 p-lg-5 border bg-purple">
+						<div class="form-group row">
+							<div class="col-md-6">
+								<label for="c_fname">Prénom <span class="text-danger">*</span></label>
+								<input type="text" class="form-control" id="c_fname" name="c_fname">
+							</div>
+							<div class="col-md-6">
+								<label for="c_lname">Nom de famille <span class="text-danger">*</span></label>
+								<input type="text" class="form-control" id="c_lname" name="c_lname">
 							</div>
 						</div>
-						<div class="col-lg-7">
-							
+
+						<div class="form-group row mb-5">
+							<div class="col-md-12">
+								<label for="c_email_address">Adresse e-mail <span class="text-danger">*</span></label>
+								<input type="text" class="form-control" id="c_email_address" name="c_email_address">
+							</div>
+							<div class="col-md-12">
+								<label for="c_phone">Téléphone <span class="text-danger">*</span></label>
+								<input type="text" class="form-control" id="c_phone" name="c_phone" placeholder="Numéro de téléphone">
+							</div>
 						</div>
+
+						<div class="form-group">
+							<label for="c_order_notes">Notes de commande</label>
+							<textarea name="c_order_notes" id="c_order_notes" cols="30" rows="5" class="form-control" placeholder="Écrivez vos notes ici..."></textarea>
+						</div>
+
 					</div>
 				</div>
-			</div>
-		<!-- End Hero Section -->
+				<div class="col-md-6">
+					<div class="row mb-5">
+						<div class="col-md-12">
+							<h2 class="h3 mb-3">Votre commande</h2>
+							<div class="p-3 p-lg-5 border bg-purple">
+								<table class="table site-block-order-table mb-5">
+									<thead>
+									<th>Produit</th>
+									<th>Total</th>
+									</thead>
+									<tbody>
+									<tr>
+										<td>Chemise à col rond <strong class="mx-2">x</strong> 1</td>
+										<td>250,00 $</td>
+									</tr>
+									<tr>
+										<td>Chemise polo <strong class="mx-2">x</strong>   1</td>
+										<td>100,00 $</td>
+									</tr>
+									<tr>
+										<td class="font-weight-bold"><strong>Sous-total du panier</strong></td>
+										<td>350,00 $</td>
+									</tr>
+									<tr>
+										<td class="font-weight-bold"><strong>Total de la commande</strong></td>
+										<td class="font-weight-bold"><strong>350,00 $</strong></td>
+									</tr>
+									</tbody>
+								</table>
 
-		<div class="untree_co-section">
-		    <div class="container">
-		      <div class="row mb-5">
-		      <div class="row">
-		        <div class="col-md-6 mb-5 mb-md-0">
-		          <h2 class="h3 mb-3">Billing Details</h2>
-		          <div class="p-3 p-lg-5 border bg-purple">
-		            <div class="form-group row">
-		              <div class="col-md-6">
-		                <label for="c_fname">First Name <span class="text-danger">*</span></label>
-		                <input type="text" class="form-control" id="c_fname" name="c_fname">
-		              </div>
-		              <div class="col-md-6">
-		                <label for="c_lname">Last Name <span class="text-danger">*</span></label>
-		                <input type="text" class="form-control" id="c_lname" name="c_lname">
-		              </div>
-		            </div>
+								<div class="border p-3 mb-3">
+									<h3 class="h6 mb-4">Paiement par carte de crédit</h3>
 
-		            <div class="form-group row mb-5">
-		              <div class="col-md-12">
-		                <label for="c_email_address">Email Address <span class="text-danger">*</span></label>
-		                <input type="text" class="form-control" id="c_email_address" name="c_email_address">
-		              </div>
-		              <div class="col-md-12">
-		                <label for="c_phone">Phone <span class="text-danger">*</span></label>
-		                <input type="text" class="form-control" id="c_phone" name="c_phone" placeholder="Phone Number">
-		              </div>
-		            </div>
+									<div id="payment-methods">
+										<div class="container">
+											<div class="row">
+												<form id="payment-form">
+													<div class="form-group">
+														<label for="card-holder-name">Nom du titulaire de la carte</label>
+														<input type="text" class="form-control" id="card-holder-name" required>
+													</div>
+													<div class="form-group">
+														<label for="card-element-number">Numéro de la carte</label>
+														<input id="card-element-number" class="form-control">
+														<!-- Élément de carte Stripe -->
+														</input>
+													</div>
+													<div class="form-group row">
+														<div class="form-group col-md-6">
+															<label for="card-element-number">Date</label>
+															<input id="card-element-date" class="form-control">
+															<!-- Élément de carte Stripe -->
+															</input>
+														</div>
+														<div class="form-group col-md-6">
+															<label for="card-element-number">Numéro CCV</label>
+															<input id="card-element-security" class="form-control">
+															<!-- Élément de carte Stripe -->
+															</input>
+														</div>
+													</div>
+													<div id="card-errors" role="alert" class="text-danger"></div>
+													<button id="submit-payment-btn" class="btn btn-block mt-4" onclick="window.location='thankyou.html'">Payer</button>
+												</form>
+											</div>
+										</div>
 
-		            <div class="form-group">
-		              <label for="c_order_notes">Order Notes</label>
-		              <textarea name="c_order_notes" id="c_order_notes" cols="30" rows="5" class="form-control" placeholder="Write your notes here..."></textarea>
-		            </div>
+									</div>
+								</div>
 
-		          </div>
-		        </div>
-		        <div class="col-md-6">
-		          <div class="row mb-5">
-		            <div class="col-md-12">
-		              <h2 class="h3 mb-3">Your Order</h2>
-		              <div class="p-3 p-lg-5 border bg-purple">
-		                <table class="table site-block-order-table mb-5">
-		                  <thead>
-		                    <th>Product</th>
-		                    <th>Total</th>
-		                  </thead>
-		                  <tbody>
-		                    <tr>
-		                      <td>Top Up T-Shirt <strong class="mx-2">x</strong> 1</td>
-		                      <td>$250.00</td>
-		                    </tr>
-		                    <tr>
-		                      <td>Polo Shirt <strong class="mx-2">x</strong>   1</td>
-		                      <td>$100.00</td>
-		                    </tr>
-		                    <tr>
-		                      <td class="font-weight-bold"><strong>Cart Subtotal</strong></td>
-		                      <td>$350.00</td>
-		                    </tr>
-		                    <tr>
-		                      <td class="font-weight-bold"><strong>Order Total</strong></td>
-		                      <td class="font-weight-bold"><strong>$350.00</strong></td>
-		                    </tr>
-		                  </tbody>
-		                </table>
-
-						  <div class="border p-3 mb-3">
-							  <h3 class="h6 mb-4">Paiement par Carte de Crédit</h3>
-
-							  <div id="payment-methods">
-								  <div class="container">
-									  <div class="row">
-											  <form id="payment-form">
-												  <div class="form-group">
-													  <label for="card-holder-name">Nom du titulaire de la carte</label>
-													  <input type="text" class="form-control" id="card-holder-name" required>
-												  </div>
-												  <div class="form-group">
-													  <label for="card-element-number">Numéro de la carte</label>
-													  <input id="card-element-number" class="form-control">
-														  <!-- Stripe Card Element -->
-													  </input>
-												  </div>
-												  <div class="form-group row">
-													  <div class="form-group col-md-6">
-														  <label for="card-element-number">Date</label>
-														  <input id="card-element-date" class="form-control">
-														  <!-- Stripe Card Element -->
-														  </input>
-													  </div>
-													  <div class="form-group col-md-6">
-														  <label for="card-element-number">Numéro ccv</label>
-														  <input id="card-element-security" class="form-control">
-														  <!-- Stripe Card Element -->
-														  </input>
-													  </div>
-												  </div>
-												  <div id="card-errors" role="alert" class="text-danger"></div>
-												  <button id="submit-payment-btn" class="btn btn-block mt-4" onclick="window.location='thankyou.html'">Payer</button>
-											  </form>
-									  </div>
-								  </div>
-
-							  </div>
-						  </div>
-
-		              </div>
-		            </div>
-		          </div>
-
-		        </div>
-		      </div>
-		      <!-- </form> -->
-			  </div>
-		    </div>
-		  </div>
-
-			<!-- Start Footer Section -->
-			<footer class="footer-section">
-				<div class="container relative">
-
-					<div class="sofa-img">
-						<img src="images/couch.png" alt="Image" class="img-fluid">
-					</div>
-
-					<div class="row g-5 mb-5">
-						<div class="col-lg-4">
-							<div class="mb-4 footer-logo-wrap"><a class="footer-logo">DNS<span>.</span></a></div>
-							<p class="mb-4">La vente des jetons numériques uniques comme dans un supermarcher.</p>
-
-						</div>
-					</div>
-
-					<div class="border-top copyright">
-						<div class="row pt-4">
-							<div class="col-lg-6">
-								<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by NFT-corp.com
-								</p>
 							</div>
 						</div>
 					</div>
-				</div>
-			</footer>
-			<!-- End Footer Section -->
 
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/tiny-slider.js"></script>
-		<script src="js/custom.js"></script>
-	</body><script src="https://js.stripe.com/v3/"></script>
+				</div>
+			</div>
+			<!-- </form> -->
+		</div>
+	</div>
+</div>
+
+<!-- Début Section Pied de page -->
+<footer class="footer-section">
+	<div class="container relative">
+
+		<div class="sofa-img">
+			<img src="images/couch.png" alt="Image" class="img-fluid">
+		</div>
+
+		<div class="row g-5 mb-5">
+			<div class="col-lg-4">
+				<div class="mb-4 footer-logo-wrap"><a class="footer-logo">DNS<span>.</span></a></div>
+				<p class="mb-4">La vente des jetons numériques uniques comme dans un supermarché.</p>
+
+			</div>
+		</div>
+
+		<div class="border-top copyright">
+			<div class="row pt-4">
+				<div class="col-lg-6">
+					<p class="mb-2 text-center text-lg-start">Droits d'auteur &copy;<script>document.write(new Date().getFullYear());</script>. Tous droits réservés. &mdash; Conçu avec amour par NFT-corp.com
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Fin Section Pied de page -->
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/tiny-slider.js"></script>
+<script src="js/custom.js"></script>
+</body><script src="https://js.stripe.com/v3/"></script>
 
 </html>

@@ -61,11 +61,44 @@
 
 	        quantityAmount.value = value;
 	    }
-	    
+
 	    init();
-		
+
 	};
 	sitePlusMinus();
 
+	function displayProducts(limit = null) {
+		const productListContainer = document.getElementById('product-list');
+		if (!productListContainer) {
+			console.log("Product list container not found");
+			return;
+		}
+		productListContainer.innerHTML = '';
 
+		let displaySet = products;
+		if (limit) {
+			displaySet = products.slice(0, limit);
+		}
+
+		displaySet.forEach(product => {
+			const productElement = `
+            <div class="col-12 col-md-4 col-lg-3 mb-5">
+                <div class="product-item">
+                    <img src="${product.image}" class="img-fluid product-thumbnail" alt="product">
+                    <h3 class="product-title">${product.name}</h3>
+                    <strong class="product-price">$${product.price.toFixed(2)}</strong>
+                </div>
+            </div>
+        `;
+			productListContainer.innerHTML += productElement;
+		});
+	}
+
+	window.addEventListener('load', function() {
+		if (document.body.id === "indexPage") {
+			displayProducts(3);
+		} else if (document.body.id === "shopPage") {
+			displayProducts();
+		}
+	});
 })()
