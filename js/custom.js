@@ -71,7 +71,7 @@
     };
     sitePlusMinus();
 
-    // Products logic
+    // Displays products dynamically by appending HTML elements to the product list container
     function displayProducts(limit = null) {
         const productListContainer = document.getElementById('product-list');
         if (!productListContainer) {
@@ -101,16 +101,18 @@
         attachAddToCartEventListeners();
     }
 
-    // Add to cart logic
+    // Retrieves the cart from local storage or initializes a new one if none exists
     function getCart() {
         const cart = localStorage.getItem('cart');
         return cart ? JSON.parse(cart) : [];
     }
 
+    // Saves the current state of the cart to local storage
     function saveCart(cart) {
         localStorage.setItem('cart', JSON.stringify(cart));
     }
 
+    // Adds a product to the cart and updates the cart in local storage
     function addToCart(productId) {
         console.log("Adding to cart, Product ID:", productId);
         let cart = getCart();
@@ -132,6 +134,7 @@
         console.log("Product added to cart. Current cart:", getCart());
     }
 
+    // Removes or decreases the quantity of a product in the cart
     function removeProductFromCart(productId) {
         let cart = getCart();
         const productIndex = cart.findIndex(item => item.id === productId);
@@ -151,7 +154,7 @@
         }
     }
 
-
+    // Displays the current state of the cart in the UI
     function displayCart() {
         const cart = getCart();
         const cartTableBody = document.querySelector('.site-blocks-table tbody');
@@ -195,6 +198,7 @@
         attachRemoveButtons();
     }
 
+    // Attaches event listeners to the remove buttons in the cart table
     function attachRemoveButtons() {
         document.querySelectorAll('.remove-from-cart').forEach(button => {
             button.removeEventListener('click', handleRemoveFromCart);
@@ -202,12 +206,14 @@
         });
     }
 
+    // Event handler for removing items from the cart
     function handleRemoveFromCart(event) {
         const productId = parseInt(event.target.getAttribute('data-product-id'), 10);
         removeProductFromCart(productId);
         displayCart();
     }
 
+    // Updates order summary based on items in the cart
     function updateOrderSummary() {
         const cart = getCart();
         const orderItemsElement = document.getElementById('order-items');
@@ -238,19 +244,24 @@
         orderTotalElement.textContent = `${total.toFixed(2)} $`;
     }
 
+    // Ensures the cart and order summary are updated on page load
     document.addEventListener('DOMContentLoaded', updateOrderSummary);
 
-
-    //Listeners
+    // Ensures the cart is displayed on page load
     document.addEventListener('DOMContentLoaded', displayCart);
 
+    // Specific page load conditions for different pages
     window.addEventListener('load', function () {
         if (document.body.id === "indexPage") {
             displayProducts(3);
         } else if (document.body.id === "shopPage") {
             displayProducts();
         }
+
+        attachAddToCartEventListeners();
     });
+
+    // This block sets up event listeners for all 'add-to-cart' buttons.
     document.querySelectorAll('.add-to-cart').forEach(button => {
         button.addEventListener('click', event => {
             const productId = parseInt(event.target.getAttribute('data-product-id'), 10);
@@ -258,6 +269,8 @@
         });
 
     });
+
+    // This block sets up event listeners for all 'remove-from-cart' buttons.
     document.querySelectorAll('.remove-from-cart').forEach(button => {
         button.addEventListener('click', event => {
             const productId = parseInt(event.target.getAttribute('data-product-id'), 10);
@@ -266,13 +279,18 @@
 
     });
 
+    // Function to attach event listeners to all 'add-to-cart' buttons on the page.
     function attachAddToCartEventListeners() {
         document.querySelectorAll('.add-to-cart').forEach(button => {
-            button.addEventListener('click', event => {
-                const productId = parseInt(event.target.getAttribute('data-product-id'), 10);
-                addToCart(productId);
-                displayCart();
-            });
+            button.removeEventListener('click', handleAddToCart);
+            button.addEventListener('click', handleAddToCart);
         });
     }
+
+    function handleAddToCart(event) {
+        const productId = parseInt(event.target.getAttribute('data-product-id'), 10);
+        addToCart(productId);
+        displayCart();
+    }
+
 })()

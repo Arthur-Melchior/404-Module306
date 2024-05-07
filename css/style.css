@@ -772,3 +772,14 @@ textarea {
 .remove-from-cart:hover {
   color: #FF4500;
 }
+
+.alert {
+  padding: 10px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  margin-top: 15px;
+}
+
+.alert-success {
+  background-color: #4CAF50;
+}
